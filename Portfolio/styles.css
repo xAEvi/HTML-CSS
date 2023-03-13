@@ -1,0 +1,138 @@
+*{
+    font-family: 'Sora', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: #778BBE;
+    box-shadow: 0 2px 0 #93def977;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#navbar a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #f8eadc;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#navbar a:hover{
+    color: black;
+}
+
+#welcome-section{
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    background-image: linear-gradient(45deg, #F59BAD 0%, #FAD0D5 100%);
+}
+
+#projects{
+    background-color: #7ec4cf;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#text-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#projects .text{
+    color: black;
+    padding: 5rem 0 0.5rem 0;
+}
+
+#projects a{
+    text-decoration: none;
+}
+
+#projects hr{
+    margin-top: 1rem;
+    width: 400px;
+    border: solid black;
+}
+
+.project-tile{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    grid-gap: 2rem;
+    margin: 2rem 0 2rem 0;
+}
+
+.project-item{
+    border-radius: 5%;
+    width: 420px;
+    display: flex;
+    justify-content: center;
+    height: 280px;
+    background-color: #a0c4ff;
+    margin-bottom: 3rem;
+    box-shadow: -8px 10px 27px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -8px 10px 27px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 10px 27px -7px rgba(0,0,0,0.75);
+}
+
+.image{
+    height: calc(100% - 3rem);
+    width: 95%;
+    object-fit: cover;
+    margin-top: 1rem;
+    border-radius: 2.5%;
+}
+
+.image p{
+    color: black;
+}
+
+#contact{
+    height: 100vh;
+    background-color: #FFBFA9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+#contact h1{
+    margin: 1rem;
+}
+
+#links a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #e40aa2;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 985px)  {
+    .project-tile{
+        width: 90%;
+        grid-template-columns: unset;
+        grid-gap: 2rem;
+        margin: 2rem 0 2rem 0;
+        justify-content: center;
+    }
+}
